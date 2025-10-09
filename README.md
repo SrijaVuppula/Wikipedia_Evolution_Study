@@ -12,6 +12,6 @@ The results provide us with a structured process to measure how Wikipedia pages 
 
 ## Code Availability
 
-The Python implementation of this study, including the shingling, MinHash, and Jaccard similarity calculations, is available in the  ** `Wikipedia_Evolution_Study`** directory of this repository.
+The Python implementation of this study, including the shingling, MinHash, and Jaccard similarity calculations, is available in the  **`Wikipedia_Evolution_Study`** directory of this repository.
 
 
