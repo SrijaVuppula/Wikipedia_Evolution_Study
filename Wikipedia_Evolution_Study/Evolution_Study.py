@@ -9,12 +9,9 @@ import pandas as pd
 import seaborn as sns
 import statsmodels.api as sm
 
-
-
 #########################################################
 ################## Building Functions ###################
 #########################################################
-
 
 def load_cities(parent_path):
     return {
@@ -143,14 +140,9 @@ def analyze_best_lambda(similarities, city_data, ws, lambdas):
         else:
             print(f"Could not determine best λ for w={w}.\n")
 
-
-
-
-
 #########################################################
 ################## Running Experiments ##################
 #########################################################
-
 
 def run_experiments(parent_path):
     city_data = load_cities(parent_path)
@@ -181,7 +173,6 @@ def run_experiments(parent_path):
     for city_name in city_data:
         state = city_name.split('_')[-1]
         states[state].append(city_name)
-
 
     #########################################################
     ################# Plotting Similarities #################
@@ -272,7 +263,6 @@ def run_experiments(parent_path):
 
     plt.tight_layout()
     plt.savefig('Timings.png')
-
 
     
 if __name__ == "__main__":
